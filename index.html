@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV.F para Empresas - Capacitación Tecnológica B2B</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a2e; /* Dark Purple/Blue Background */
+            color: #e0e0e0; /* Light gray text */
+        }
+        /* Custom Accent Colors (approximating DEV.F style) */
+        .bg-accent-purple { background-color: #8A2BE2; } /* Bright Purple */
+        .text-accent-purple { color: #8A2BE2; }
+        .border-accent-purple { border-color: #8A2BE2; }
+
+        .bg-accent-cyan { background-color: #00FFFF; } /* Bright Cyan */
+        .text-accent-cyan { color: #00FFFF; }
+        .border-accent-cyan { border-color: #00FFFF; }
+
+        .hover\:bg-accent-purple-dark:hover { background-color: #7b24c6; }
+        .hover\:bg-accent-cyan-dark:hover { background-color: #00e6e6; }
+
+        /* Smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Simple animation for sections */
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="py-4 px-6 md:px-12 sticky top-0 z-50 backdrop-blur-md bg-[#1a1a2e]/80">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white font-bold text-2xl">
+                DEV.F<span class="text-accent-purple">.</span> <span class="text-sm font-normal">para Empresas</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#beneficios" class="text-gray-300 hover:text-white transition duration-300">Beneficios</a>
+                <a href="#metodo" class="text-gray-300 hover:text-white transition duration-300">Método</a>
+                <a href="#testimonios" class="text-gray-300 hover:text-white transition duration-300">Testimonios</a>
+                <a href="#contacto" class="bg-accent-cyan text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-accent-cyan-dark transition duration-300 text-sm">Solicitar Consulta</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+             <a href="#beneficios" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 rounded">Beneficios</a>
+             <a href="#metodo" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 rounded">Método</a>
+             <a href="#testimonios" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 rounded">Testimonios</a>
+             <a href="#contacto" class="block px-4 py-2 bg-accent-cyan text-gray-900 rounded-lg font-semibold hover:bg-accent-cyan-dark transition duration-300 text-center">Solicitar Consulta</a>
+        </div>
+    </header>
+
+    <section class="py-20 md:py-32 px-6 text-center bg-gradient-to-b from-[#1a1a2e] to-[#2a2a3e]">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+                Transforma tu Equipo: <span class="text-accent-purple">Capacitación en Programación</span> que Impulsa Resultados Empresariales
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">
+                Desarrollamos el talento tecnológico interno que necesitas. Programas a medida, enfocados en las habilidades clave para la innovación y la eficiencia de tu negocio.
+            </p>
+            <a href="#contacto" class="inline-block bg-accent-cyan text-gray-900 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-accent-cyan-dark transition duration-300 transform hover:scale-105">
+                Solicitar Consulta Estratégica Gratuita
+            </a>
+            <p class="text-sm text-gray-400 mt-4">Analicemos juntos tus necesidades específicas, sin compromiso.</p>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 px-6 section-fade-in">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="flex items-center mb-4">
+                     <svg class="w-8 h-8 text-accent-cyan mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-white">¿Tu equipo tecnológico está preparado para el futuro?</h2>
+                </div>
+                <p class="text-gray-300 mb-4">
+                    En un mercado en constante evolución, mantener a tu equipo actualizado es crucial, pero desafiante. La falta de habilidades específicas frena la innovación, los proyectos se retrasan y la competencia toma ventaja.
+                </p>
+                 <p class="text-gray-300">
+                    Contratar nuevo talento es costoso y no siempre garantiza la adaptación cultural.
+                </p>
+            </div>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700">
+                 <div class="flex items-center mb-4">
+                     <svg class="w-8 h-8 text-accent-purple mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-white">La Solución: Potenciamos tu Talento Interno</h2>
+                </div>
+                <p class="text-gray-300 mb-4">
+                    Nuestra escuela se especializa en cerrar esa brecha. Diseñamos e impartimos programas de capacitación en programación <strong class="text-accent-purple">exclusivamente para empresas</strong>.
+                </p>
+                 <p class="text-gray-300">
+                    Convertimos a tus empleados actuales en los expertos tecnológicos que tu negocio necesita para crecer, innovar y liderar en tu sector. Olvídate de la incertidumbre y los altos costos de reclutamiento externo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-16 md:py-24 px-6 bg-gray-800 section-fade-in">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Invierte en tu Equipo, Cosecha <span class="text-accent-cyan">Resultados Tangibles</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[#1a1a2e] p-6 rounded-lg shadow-md border border-gray-700 transition duration-300 hover:border-accent-purple">
+                    <div class="text-accent-purple text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Impulso a la Innovación</h3>
+                    <p class="text-gray-400">Equipa a tu equipo con las últimas tecnologías (Python, Java, Cloud, IA...) para crear soluciones disruptivas.</p>
+                </div>
+                <div class="bg-[#1a1a2e] p-6 rounded-lg shadow-md border border-gray-700 transition duration-300 hover:border-accent-purple">
+                    <div class="text-accent-purple text-4xl mb-4">⏱️</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Mayor Eficiencia Operativa</h3>
+                    <p class="text-gray-400">Reduce tiempos de desarrollo, minimiza errores y optimiza flujos de trabajo con personal capacitado.</p>
+                </div>
+                <div class="bg-[#1a1a2e] p-6 rounded-lg shadow-md border border-gray-700 transition duration-300 hover:border-accent-purple">
+                    <div class="text-accent-purple text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">ROI Medible</h3>
+                    <p class="text-gray-400">Convierte la capacitación en un activo estratégico. Mide el impacto directo en productividad y calidad.</p>
+                </div>
+                <div class="bg-[#1a1a2e] p-6 rounded-lg shadow-md border border-gray-700 transition duration-300 hover:border-accent-purple">
+                    <div class="text-accent-purple text-4xl mb-4">🔒</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Retención de Talento Clave</h3>
+                    <p class="text-gray-400">Demuestra compromiso con el crecimiento de tus empleados, aumentando su lealtad y reduciendo la rotación.</p>
+                </div>
+                 <div class="bg-[#1a1a2e] p-6 rounded-lg shadow-md border border-gray-700 transition duration-300 hover:border-accent-purple">
+                    <div class="text-accent-purple text-4xl mb-4">🏆</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Ventaja Competitiva</h3>
+                    <p class="text-gray-400">Desarrolla capacidades internas únicas que te diferencien claramente de la competencia.</p>
+                </div>
+                 <div class="bg-[#1a1a2e] p-6 rounded-lg shadow-md border border-gray-700 transition duration-300 hover:border-accent-purple">
+                    <div class="text-accent-purple text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Adaptabilidad Garantizada</h3>
+                    <p class="text-gray-400">Programas 100% personalizables a tus objetivos, stack tecnológico y nivel actual de tu equipo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodo" class="py-16 md:py-24 px-6 section-fade-in">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Un Proceso Claro y Orientado a <span class="text-accent-purple">tus Metas</span></h2>
+            <div class="relative">
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-16 w-px bg-gray-600 -ml-px"></div>
+
+                <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+                    <div class="text-center md:text-right md:pr-16 relative">
+                        <div class="absolute left-1/2 -ml-4 md:left-auto md:right-[-2rem] top-0 w-8 h-8 bg-accent-purple rounded-full flex items-center justify-center text-white font-bold z-10">1</div>
+                        <h3 class="text-xl font-semibold text-white mb-2 mt-10 md:mt-0">Diagnóstico Estratégico</h3>
+                        <p class="text-gray-400">Nos reunimos contigo para entender a fondo tus desafíos, objetivos de negocio y el nivel actual de tu equipo.</p>
+                    </div>
+                    <div></div> <div></div> <div class="text-center md:text-left md:pl-16 relative">
+                        <div class="absolute left-1/2 -ml-4 md:left-[-2rem] top-0 w-8 h-8 bg-accent-purple rounded-full flex items-center justify-center text-white font-bold z-10">2</div>
+                        <h3 class="text-xl font-semibold text-white mb-2 mt-10 md:mt-0">Diseño Curricular a Medida</h3>
+                        <p class="text-gray-400">Co-creamos un plan de estudios práctico y relevante, enfocado en las habilidades que generarán mayor impacto.</p>
+                    </div>
+
+                     <div class="text-center md:text-right md:pr-16 relative">
+                         <div class="absolute left-1/2 -ml-4 md:left-auto md:right-[-2rem] top-0 w-8 h-8 bg-accent-purple rounded-full flex items-center justify-center text-white font-bold z-10">3</div>
+                        <h3 class="text-xl font-semibold text-white mb-2 mt-10 md:mt-0">Implementación Flexible</h3>
+                        <p class="text-gray-400">Ejecutamos la capacitación (online, presencial, híbrida) adaptándonos a la operativa de tu empresa.</p>
+                    </div>
+                     <div></div> <div></div> <div class="text-center md:text-left md:pl-16 relative">
+                         <div class="absolute left-1/2 -ml-4 md:left-[-2rem] top-0 w-8 h-8 bg-accent-purple rounded-full flex items-center justify-center text-white font-bold z-10">4</div>
+                        <h3 class="text-xl font-semibold text-white mb-2 mt-10 md:mt-0">Medición y Acompañamiento</h3>
+                        <p class="text-gray-400">Evaluamos el progreso, aseguramos la aplicabilidad y brindamos soporte continuo para maximizar la transferencia.</p>
+                    </div>
+                </div>
+            </div>
+             <p class="text-center text-gray-400 mt-16 text-lg italic">
+                Nuestro enfoque va más allá de impartir clases; nos convertimos en tu <strong class="text-white">socio estratégico</strong> para el desarrollo de talento tecnológico a largo plazo.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 px-6 bg-gray-800 section-fade-in">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Tu Socio <span class="text-accent-cyan">Confiable</span> en Capacitación Tecnológica</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                 <div class="text-center p-6">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    <h3 class="text-xl font-semibold text-white mb-2">Instructores Expertos</h3>
+                    <p class="text-gray-400">Profesionales con experiencia real en la industria, no solo académicos.</p>
+                </div>
+                 <div class="text-center p-6">
+                     <svg class="w-12 h-12 mx-auto mb-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h3 class="text-xl font-semibold text-white mb-2">Enfoque 100% Práctico</h3>
+                    <p class="text-gray-400">Aprendizaje basado en proyectos y casos reales de negocio.</p>
+                </div>
+                 <div class="text-center p-6">
+                     <svg class="w-12 h-12 mx-auto mb-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h3 class="text-xl font-semibold text-white mb-2">Contenido Actualizado</h3>
+                    <p class="text-gray-400">Nos mantenemos a la vanguardia de las tendencias tecnológicas.</p>
+                </div>
+                 <div class="text-center p-6">
+                     <svg class="w-12 h-12 mx-auto mb-4 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <h3 class="text-xl font-semibold text-white mb-2">Flexibilidad y Escalabilidad</h3>
+                    <p class="text-gray-400">Adaptamos la intensidad, duración y modalidad a tus necesidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-16 md:py-24 px-6 section-fade-in">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">Empresas que ya <span class="text-accent-purple">Confían</span> en Nuestro Método</h2>
+
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 mb-16 grayscale opacity-70">
+                 <img src="https://placehold.co/120x40/ffffff/9ca3af?text=Cliente+1" alt="Logo Cliente 1" class="h-8 md:h-10">
+                 <img src="https://placehold.co/120x40/ffffff/9ca3af?text=Cliente+2" alt="Logo Cliente 2" class="h-8 md:h-10">
+                 <img src="https://placehold.co/120x40/ffffff/9ca3af?text=Cliente+3" alt="Logo Cliente 3" class="h-8 md:h-10">
+                 <img src="https://placehold.co/120x40/ffffff/9ca3af?text=Cliente+4" alt="Logo Cliente 4" class="h-8 md:h-10">
+                 <img src="https://placehold.co/120x40/ffffff/9ca3af?text=Cliente+5" alt="Logo Cliente 5" class="h-8 md:h-10">
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 relative">
+                    <div class="absolute top-0 left-0 -mt-4 -ml-4 w-12 h-12 bg-accent-purple rounded-full flex items-center justify-center text-4xl text-white font-serif italic">“</div>
+                    <p class="text-gray-300 mb-4 italic">"Desde que capacitamos a nuestro equipo con DEV.F, hemos reducido el tiempo de entrega de nuevas funcionalidades en un 30%. Su enfoque práctico fue clave."</p>
+                    <p class="font-semibold text-white">Nombre Apellido</p>
+                    <p class="text-sm text-gray-400">Cargo, Empresa Cliente</p>
+                </div>
+                 <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 relative">
+                    <div class="absolute top-0 left-0 -mt-4 -ml-4 w-12 h-12 bg-accent-purple rounded-full flex items-center justify-center text-4xl text-white font-serif italic">“</div>
+                    <p class="text-gray-300 mb-4 italic">"El programa personalizado nos permitió adoptar [Tecnología Específica] rápidamente. El soporte y la calidad de los instructores superaron nuestras expectativas."</p>
+                    <p class="font-semibold text-white">Otro Nombre</p>
+                    <p class="text-sm text-gray-400">Otro Cargo, Otra Empresa</p>
+                </div>
+            </div>
+             </div>
+    </section>
+
+    <section id="contacto" class="py-20 md:py-32 px-6 text-center bg-gradient-to-t from-[#1a1a2e] to-[#2a2a3e] section-fade-in">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">¿Listo para Desbloquear el Potencial Tecnológico de tu Empresa?</h2>
+            <p class="text-lg text-gray-300 mb-8">
+                Hablemos sobre cómo podemos diseñar un programa de capacitación que se alinee perfectamente con tus objetivos estratégicos y transforme las capacidades de tu equipo.
+            </p>
+            <a href="mailto:empresas@devf.la?subject=Consulta%20Estratégica%20Capacitación%20B2B" class="inline-block bg-accent-cyan text-gray-900 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-accent-cyan-dark transition duration-300 transform hover:scale-105 mb-6">
+                Solicitar Consulta Estratégica Gratuita
+            </a>
+             </div>
+    </section>
+
+    <footer class="py-8 px-6 bg-[#121220] text-center text-gray-400 text-sm">
+        <div class="container mx-auto">
+            <div class="text-white font-bold text-xl mb-4">
+                DEV.F<span class="text-accent-purple">.</span>
+            </div>
+            <div class="space-x-4 mb-4">
+                <a href="#" class="hover:text-white">Política de Privacidad</a>
+                <span>|</span>
+                <a href="#" class="hover:text-white">Términos de Servicio</a>
+                 <span>|</span>
+                 <a href="mailto:empresas@devf.la" class="hover:text-white">empresas@devf.la</a>
+            </div>
+            <p>&copy; 2025 DEV.F. Todos los derechos reservados.</p>
+             </div>
+    </footer>
+
+    <script>
+        // Simple Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Simple Fade-in Animation on Scroll
+        const sections = document.querySelectorAll('.section-fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Optional: Unobserve after animation
+                    // observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the section is visible
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
